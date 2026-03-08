@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bv.css">
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop class="background-video">
+            <source type="video/mp4" src=".\assests\purple-spacedust.mp4">
+        </video>
+    </div>
+    <div class="overlay"></div>
+    <div class="content">
+        <h2>
+            Hex color compiler
+        </h2>
+        <input type="text" id="color1" maxlength="7">
+        <input type="text" id="color2" maxlength="7">
+        <div>
+            <button id = "combine" onclick="combineColors()">Combine</button>
+        </div>
+    </div>
+    <div id="output"></div>
+    <script src="bv.js"></script>
+</body>
+</html>
